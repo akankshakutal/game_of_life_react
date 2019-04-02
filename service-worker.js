@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/akankshakutal/game_of_life_react/precache-manifest.f50c9eba5362fde1c630572ec8867eb0.js"
+  "/game_of_life_react/precache-manifest.91443491a2941e69aac61cbb3bbf8114.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/akankshakutal/game_of_life_react/index.html", {
+workbox.routing.registerNavigationRoute("/game_of_life_react/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });

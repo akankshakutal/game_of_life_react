@@ -1,13 +1,13 @@
 {
-  "main.css": "/akankshakutal/game_of_life_react/static/css/main.b513ef7e.chunk.css",
-  "main.js": "/akankshakutal/game_of_life_react/static/js/main.87ac772d.chunk.js",
-  "main.js.map": "/akankshakutal/game_of_life_react/static/js/main.87ac772d.chunk.js.map",
-  "runtime~main.js": "/akankshakutal/game_of_life_react/static/js/runtime~main.9d298261.js",
-  "runtime~main.js.map": "/akankshakutal/game_of_life_react/static/js/runtime~main.9d298261.js.map",
-  "static/js/2.693cc7fd.chunk.js": "/akankshakutal/game_of_life_react/static/js/2.693cc7fd.chunk.js",
-  "static/js/2.693cc7fd.chunk.js.map": "/akankshakutal/game_of_life_react/static/js/2.693cc7fd.chunk.js.map",
-  "index.html": "/akankshakutal/game_of_life_react/index.html",
-  "precache-manifest.f50c9eba5362fde1c630572ec8867eb0.js": "/akankshakutal/game_of_life_react/precache-manifest.f50c9eba5362fde1c630572ec8867eb0.js",
-  "service-worker.js": "/akankshakutal/game_of_life_react/service-worker.js",
-  "static/css/main.b513ef7e.chunk.css.map": "/akankshakutal/game_of_life_react/static/css/main.b513ef7e.chunk.css.map"
+  "main.css": "/game_of_life_react/static/css/main.b513ef7e.chunk.css",
+  "main.js": "/game_of_life_react/static/js/main.b9579521.chunk.js",
+  "main.js.map": "/game_of_life_react/static/js/main.b9579521.chunk.js.map",
+  "runtime~main.js": "/game_of_life_react/static/js/runtime~main.1c3aaf3e.js",
+  "runtime~main.js.map": "/game_of_life_react/static/js/runtime~main.1c3aaf3e.js.map",
+  "static/js/2.693cc7fd.chunk.js": "/game_of_life_react/static/js/2.693cc7fd.chunk.js",
+  "static/js/2.693cc7fd.chunk.js.map": "/game_of_life_react/static/js/2.693cc7fd.chunk.js.map",
+  "index.html": "/game_of_life_react/index.html",
+  "precache-manifest.91443491a2941e69aac61cbb3bbf8114.js": "/game_of_life_react/precache-manifest.91443491a2941e69aac61cbb3bbf8114.js",
+  "service-worker.js": "/game_of_life_react/service-worker.js",
+  "static/css/main.b513ef7e.chunk.css.map": "/game_of_life_react/static/css/main.b513ef7e.chunk.css.map"
 }
