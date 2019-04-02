@@ -10,6 +10,19 @@ class Table extends React.Component {
       topLeft: [0, 0],
       bottomRight: [this.props.size - 1, this.props.size - 1]
     };
+    this.makeCellAlive = this.makeCellAlive.bind(this);
+    this.startGame = this.startGame.bind(this);
+    this.stopGame = this.stopGame.bind(this);
+    this.nextGeneration = this.GameOfLife.nextGeneration.bind(this);
+    this.getNextGenerationCells = this.getNextGenerationCells.bind(this);
+    this.state = { aliveCells: [] };
+  }
+
+  makeCellAlive(event) {
+    let id = event.target.id;
+    this.state.aliveCells.push(id.split("_").map(x => +x));
+    let element = document.getElementById(id);
+    element.style.backgroundColor = "black";
   }
 
   createTableRow(rowIndex) {
@@ -30,16 +43,47 @@ class Table extends React.Component {
     return <tbody id="table-body">{table}</tbody>;
   }
 
+  startGame() {
+    this.timerId = setInterval(() => {
+      this.getNextGenerationCells();
+    }, 100);
+  }
+
+  stopGame() {
+    clearInterval(this.timerId);
+  }
+
+  colorNextGenerationCells(nextGen) {
+    nextGen.forEach(cell => {
+      let id = cell.join("_");
+      document.getElementById(id).style.background = "black";
+    });
+  }
+
+  removeCellColor() {
+    this.state.aliveCells.forEach(cell => {
+      let id = cell.join("_");
+      document.getElementById(id).style.background = "white";
+    });
+  }
+
+  getNextGenerationCells() {
+    let nextGen = this.nextGeneration(this.state.aliveCells, this.bounds);
+    this.removeCellColor();
+    this.colorNextGenerationCells(nextGen);
+    this.setState(state => (state.aliveCells = nextGen));
+  }
+
   render() {
     return (
       <div>
-        <h2>Welcome to Game of Life</h2>
+        <h2>Game of Life</h2>
         <div className="table-view">
           <table id="table">{this.createTable()}</table>
         </div>
         <div className="button-view">
-          <button>Start</button>
-          <button>Stop</button>
+          <button onClick={this.startGame}>Start</button>
+          <button onClick={this.stopGame}>Stop</button>
         </div>
       </div>
     );
